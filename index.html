@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maruthi Divine Touch - Premium Agarbatti Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <img src="/public/logo.jpg" class="logo-icon">
+          <span class="logo-text">Maruthi Divine Touch</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <span class="hero-badge">Crafted with Devotion</span>
+        <h1 class="hero-title">Sacred Fragrances<br>for Your Soul</h1>
+        <p class="hero-subtitle">Discover our premium collection of hand-rolled agarbatti, crafted from natural herbs, resins, and essential oils. Each stick carries centuries of aromatic tradition.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Shop Collection</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Fragrances</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Natural</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="incense-stick-graphic">
+          <div class="smoke-particle"></div>
+          <div class="smoke-particle"></div>
+          <div class="smoke-particle"></div>
+          <div class="smoke-particle"></div>
+          <div class="smoke-particle"></div>
+          <div class="stick-body"></div>
+          <div class="stick-tip"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Browse by Category</span>
+          <h2 class="section-title">Find Your Perfect Scent</h2>
+        </div>
+        <div class="category-grid">
+          <button class="category-card active" data-category="all">
+            <div class="category-icon">&#9753;</div>
+            <span class="category-name">All</span>
+          </button>
+          <button class="category-card" data-category="floral">
+            <div class="category-icon">&#10047;</div>
+            <span class="category-name">Floral</span>
+          </button>
+          <button class="category-card" data-category="woody">
+            <div class="category-icon">&#127795;</div>
+            <span class="category-name">Woody</span>
+          </button>
+          <button class="category-card" data-category="herbal">
+            <div class="category-icon">&#127807;</div>
+            <span class="category-name">Herbal</span>
+          </button>
+          <button class="category-card" data-category="premium">
+            <div class="category-icon">&#128142;</div>
+            <span class="category-name">Premium</span>
+          </button>
+          <button class="category-card" data-category="sambrani">
+            <div class="category-icon">&#128293;</div>
+            <span class="category-name">Sambrani</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Our Collection</span>
+          <h2 class="section-title">Premium Agarbatti</h2>
+          <p class="section-desc">Each incense stick is hand-rolled with love, using only the finest natural ingredients sourced from across India.</p>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-image-card">
+              <div class="about-pattern"></div>
+              <img src="/public/logo.jpg" class="about-icon-large">
+              <p class="about-image-text">Since 2024</p>
+            </div>
+            <div class="about-badge-card">
+              <span class="badge-number">60k+</span>
+              <span class="badge-text">Trusted Customers</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-tag">Our Heritage</span>
+            <h2 class="section-title">Rooted in Tradition,<br>Crafted with Love</h2>
+            <p class="about-text">For over six decades, Maruthi Divine Touch has been the guardian of India's incense-making heritage. Our master artisans hand-roll each agarbatti using time-honored techniques passed down through generations.</p>
+            <p class="about-text">We source the finest natural ingredients — sandalwood from Karnataka, jasmine from Tamil Nadu, and rare resins from the forests of Assam. Every fragrance tells a story of devotion and craftsmanship.</p>
+            <div class="about-features">
+              <div class="feature">
+                <div class="feature-icon">&#10003;</div>
+                <div>
+                  <h4>100% Natural</h4>
+                  <p>No synthetic fragrances or chemicals</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">&#10003;</div>
+                <div>
+                  <h4>Automated Machine-Rolled</h4>
+                  <p>Traditional artisan craftsmanship</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature-icon">&#10003;</div>
+                <div>
+                  <h4>Eco-Friendly</h4>
+                  <p>Sustainable sourcing & packaging</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Customer Love</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">"The sandalwood agarbatti is absolutely divine. The fragrance fills my entire home and lingers beautifully. Best incense I've ever used!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PS</div>
+              <div>
+                <h4>Priya Sharma</h4>
+                <span>Mumbai</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">"I've been buying from Maruthi Divine Touch for 5 years now. The quality is consistently excellent. The jasmine sticks are my daily ritual."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div>
+                <h4>Rajesh Kumar</h4>
+                <span>Delhi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">"The premium collection is worth every rupee. The sambrani cups create such a peaceful atmosphere during my morning prayers."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AM</div>
+              <div>
+                <h4>Anita Menon</h4>
+                <span>Bangalore</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-tag">Get in Touch</span>
+            <h2 class="section-title">We'd Love to<br>Hear From You</h2>
+            <p class="contact-text">Have questions about our products or want to place a bulk order? Reach out to us and we'll get back to you within 24 hours.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon">&#128231;</span>
+                <span>info@maruthidivinetouch.in</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">&#128222;</span>
+                <span>+91 9876543210</span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">&#128205;</span>
+                <span>#7, Cubbonpete, Bangalore - 560002</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required class="form-input">
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required class="form-input">
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="5" required class="form-input form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo">
+              <span class="logo-icon">&#9753;</span>
+              <span class="logo-text">Maruthi Divine Touch</span>
+            </a>
+            <p class="footer-desc">Premium hand-rolled agarbatti crafted with natural ingredients and centuries of tradition.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-links">
+            <h4>Categories</h4>
+            <a href="#products">Floral</a>
+            <a href="#products">Woody</a>
+            <a href="#products">Herbal</a>
+            <a href="#products">Premium</a>
+          </div>
+          <div class="footer-links">
+            <h4>Support</h4>
+            <a href="#contact">Help Center</a>
+            <a href="#contact">Shipping Info</a>
+            <a href="/admin/index.html">Admin</a>
+            <a href="#contact">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Maruthi Divine Touch. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty" id="cartEmpty">
+          <span class="cart-empty-icon">&#128722;</span>
+          <p>Your cart is empty</p>
+          <a href="#products" class="btn btn-primary btn-sm" id="startShopping">Start Shopping</a>
+        </div>
+      </div>
+      <div class="cart-footer" id="cartFooter" style="display:none;">
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotal">&#8377;0</span>
+        </div>
+        <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+      <span id="toastMessage"></span>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
